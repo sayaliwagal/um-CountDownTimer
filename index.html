@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Countdown Timer</title>
+</head>
+<body>
+    <h1>Mordern Countdown</h1>
+    <div class="timer-container">
+        <div class="input-group">
+            <label for="targetDate">Target Date : </label>
+            <input type="date" id="targetDate">
+            <label for="targetTime">Target Time : </label>
+            <input type="time" id="targetTime">
+        </div>
+        <button id="startButton">Start Countdown</button>
+    </div>
+        <div class="countdown-display">
+            <div class="time-unit">
+                <div class="time-circle-inner">
+                    <svg class="progress-ring" width="120" heigth="120" viewBox="0 0 120 120">
+                        <circle class="progress-ring-bg" cx="60" cy="60" r="54"></circle>
+                        <circle class="progress-ring-fg" cx="60" cy="60" r="54"></cicy="60" rcle>
+                    </svg>
+                    <span id="days" class="number">00</span>
+                    <span class="label">Days</span>
+                </div>           
+            </div>
+             <div class="time-unit">
+                <div class="time-circle-inner">
+                     <svg class="progress-ring" width="120" heigth="120" viewBox="0 0 120 120">
+                        <circle class="progress-ring-bg" cx="60" cy="60" r="54"></circle>
+                        <circle class="progress-ring-fg" cx="60" cy="60" r="54"></circle>
+                    </svg>
+                    <span id="hours" class="number">00</span>
+                    <span class="label">Hours</span>
+                </div>
+            </div>
+             <div class="time-unit">
+                <div class="time-circle-inner">
+                     <svg class="progress-ring" width="120" heigth="120" viewBox="0 0 120 120">
+                        <circle class="progress-ring-bg" cx="60" cy="60" r="54"></circle>
+                        <circle class="progress-ring-fg" cx="60" cy="60" r="54"></circle>
+                    </svg>
+                    <span id="minutes" class="number">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+            </div>
+               <div class="time-unit">
+                <div class="time-circle-inner">
+                     <svg class="progress-ring" width="120" heigth="120" viewBox="0 0 120 120">
+                        <circle class="progress-ring-bg" cx="60" cy="60" r="54"></circle>
+                        <circle class="progress-ring-fg" cx="60" cy="60" r="54"></circle>
+                    </svg>
+                    <span id="seconds" class="number">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+        </div>
+        <div id="message" class="message-box hidden">Hello</div>
+    <script src="./script.js"></script>
+</body>
+</html>
